@@ -1,0 +1,99 @@
+--
+-- Base de datos: `GDEF3`
+
+
+CREATE DATABASE GDEF3
+
+
+USE GDEF3
+
+
+-- --------------------------------------------------------
+
+
+--
+-- Estructura de tabla para la tabla `marca`
+--
+
+
+CREATE TABLE `marca` (
+  `marcaID` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+-- --------------------------------------------------------
+
+
+--
+-- Estructura de tabla para la tabla `celular`
+--
+
+
+CREATE TABLE `celular`` (
+  `celularID` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `codigo` varchar(50) NOT NULL,
+  `precio` decimal(10,0) NOT NULL,
+  `marcaID`` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+--
+-- Índices para tablas volcadas
+--
+
+
+--
+-- Indices de la tabla `marca`
+--
+ALTER TABLE `marca`
+  ADD PRIMARY KEY (`marcaID`);
+
+
+--
+-- Indices de la tabla `celular`
+--
+ALTER TABLE `celular`
+  ADD PRIMARY KEY `celularID` (`productoID`),
+  ADD KEY `marcaID` (`marcaID`);
+
+
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+
+--
+-- AUTO_INCREMENT de la tabla `marca`
+--
+ALTER TABLE `marca`
+  MODIFY `marcaID` int(11) NOT NULL AUTO_INCREMENT;
+
+
+--
+-- AUTO_INCREMENT de la tabla `celular`
+--
+ALTER TABLE `celular`
+  MODIFY `celularID` int(11) NOT NULL AUTO_INCREMENT;
+
+
+--
+-- Restricciones para tablas volcadas
+--
+
+
+--
+-- Filtros para la tabla `celular`
+--
+ALTER TABLE `celular`
+  ADD CONSTRAINT `celular_ibfk_1` FOREIGN KEY (`marcaID`) REFERENCES `marca` (`marcaID`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
