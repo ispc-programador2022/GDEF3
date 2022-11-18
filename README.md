@@ -1,4 +1,7 @@
 ![imagen](src-final\recursos\banner.png)
+### Profesores:
+- Silvia Perotti
+- Héctor Prado
 
 # GDEF3
 
