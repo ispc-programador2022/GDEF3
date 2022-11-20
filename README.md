@@ -1,4 +1,4 @@
-![imagen](src-final\recursos\banner.png)
+![imagen](src-final/recursos/banner.png)
 ### Profesores:
 - Silvia Perotti
 - Héctor Prado
