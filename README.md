@@ -16,7 +16,7 @@
 - [video](presentacion-tf.mp4)
 
 ## Informe
-- [Informe final](informe.pdf)
+- [Informe final](Informe de Contenido.pdf)
 
 <br></br>
 ## Objetivo
