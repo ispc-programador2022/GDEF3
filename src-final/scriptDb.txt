@@ -1,0 +1,124 @@
+--
+-- Base de datos: `GDEF3`
+
+
+CREATE DATABASE GDEF3
+
+
+USE GDEF3
+
+
+-- --------------------------------------------------------
+
+
+--
+-- Estructura de tabla para la tabla `marca`
+--
+
+
+CREATE TABLE `marca` (
+  `marcaID` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tipo`
+--
+
+
+CREATE TABLE `tipo` (
+  `tipoID` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+
+--
+-- Estructura de tabla para la tabla `panial`
+--
+
+
+CREATE TABLE `panial` (
+  `panialID` int(11) NOT NULL,
+  `marcaID` varchar(50) NOT NULL,
+  `tipoID` varchar(50) NOT NULL,
+  `precio` decimal(10,0) NOT NULL,
+  `cantidad` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+--
+-- Índices para tablas volcadas
+--
+
+
+--
+-- Indices de la tabla `marca`
+--
+ALTER TABLE `marca`
+  ADD PRIMARY KEY (`marcaID`);
+
+--
+-- Indices de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  ADD PRIMARY KEY (`tipoID`);
+
+--
+-- Indices de la tabla `panial`
+--
+ALTER TABLE `panial`
+  ADD PRIMARY KEY `panialID` (`productoID`),
+  ADD KEY `marcaID` (`marcaID`);
+  ADD KEY `tipoID` (`tipoID`);
+
+
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+
+--
+-- AUTO_INCREMENT de la tabla `marca`
+--
+ALTER TABLE `marca`
+  MODIFY `marcaID` int(11) NOT NULL AUTO_INCREMENT;
+
+
+
+--
+-- AUTO_INCREMENT de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  MODIFY `tipoID` int(11) NOT NULL AUTO_INCREMENT;
+
+
+--
+-- AUTO_INCREMENT de la tabla `panial`
+--
+ALTER TABLE `panial`
+  MODIFY `panialID` int(11) NOT NULL AUTO_INCREMENT;
+
+
+--
+-- Restricciones para tablas volcadas
+--
+
+
+--
+-- Filtros para la tabla `celular`
+--
+ALTER TABLE `panial`
+  ADD CONSTRAINT `panial_ibfk_1` FOREIGN KEY (`marcaID`) REFERENCES `marca` (`marcaID`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `panial_ibfk_2` FOREIGN KEY (`tipoID`) REFERENCES `tipo` (`tipoID`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
