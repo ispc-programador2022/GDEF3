@@ -3,7 +3,7 @@
 ### Profesores:
 - Silvia Perotti
 - Héctor Prado
-- 
+
 <br></br>
 ## Integrante:
 - [Shirley Luz Frassa](https://github.com/sfrassa)
@@ -18,6 +18,7 @@
 ## Informe
 - [Informe final](informe.pdf)
 
+<br></br>
 ## Objetivo
 - Comparar de forma rápida los precios, marcas y tamaños de pañales que se publican en el sitio web "FarmaOnline".
 
