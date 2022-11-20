@@ -6,7 +6,7 @@
 
 ### Integrante:
 - [Shirley Luz Frassa](https://github.com/sfrassa)
-- Virginia Diaz
+- Virginia Díaz
 
 <br></br>
 ## Trello
@@ -19,8 +19,11 @@
 - ![Informe final](Informe de Contenido.pdf)
 
 <br></br>
-## Objetivo
-- Comparar de forma rápida los precios, marcas y tamaños de pañales que se publican en el sitio web "FarmaOnline".
+## Objetivos
+- Comparar de forma rápida los precios, marcas y tamaños de pañales que se publican en el sitio web "FarmaOnline". Asimismo, y como práctica adjunta, se comparan marcas, tipos, y precios de pañales provenientes del sitio web "Farmacity".
+- Obtener, modificar, y eliminar datos.
+- Visualizar gráficas comparativas con los datos obtenidos del sitio web "FarmaOnline".
+- Informe final de todo el contenido.
 
 <br></br>
 ## Tecnologías 👩‍💻👨🏼‍💻
@@ -29,7 +32,7 @@
 - Python
 
 ### Librerias
-- Beautiful Soup: para Scrapping
+- Beautiful Soup: para Web Scrapping.
 - Pandas: para guardar datos obtenidos en formato .csv
-- Request: obtener el contenido de una página web
+- Request: obtener el contenido de una página web.
 
