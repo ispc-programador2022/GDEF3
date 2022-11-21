@@ -13,7 +13,7 @@
 - https://trello.com/b/4vQZ56ZJ/gdef3
 
 ## Video Presentación Trabajo Final
-- [Video](presentacion-tf.mp4)
+- [Video](https://drive.google.com/file/d/1OjYn5BDXXZbfGmUcfpfualr1dBhEjypk/view?usp=sharing)
 
 ## Informe
 - [Informe final](Informe de Contenido.pdf)
