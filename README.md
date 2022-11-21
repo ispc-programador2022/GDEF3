@@ -6,17 +6,17 @@
 
 ### Integrante:
 - [Shirley Luz Frassa](https://github.com/sfrassa)
-- Virginia Díaz
+- [Virginia Díaz](https://github.com/VirginiaDi)
 
 <br></br>
 ## Trello
 - https://trello.com/b/4vQZ56ZJ/gdef3
 
 ## Video Presentación Trabajo Final
-- [video](presentacion-tf.mp4)
+- [Video](presentacion-tf.mp4)
 
 ## Informe
-- ![Informe final](Informe de Contenido.pdf)
+- [Informe final](Informe de Contenido.pdf)
 
 <br></br>
 ## Objetivos
