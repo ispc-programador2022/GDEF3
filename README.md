@@ -4,7 +4,7 @@
 - Silvia Perotti
 - Héctor Prado
 
-### Integrante:
+### Integrantes:
 - [Shirley Luz Frassa](https://github.com/sfrassa)
 - [Virginia Díaz](https://github.com/VirginiaDi)
 
